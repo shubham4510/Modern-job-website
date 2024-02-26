@@ -4,6 +4,7 @@ import msg_icon from '../../assets/msg-icon.png'
 import mail_icon from '../../assets/mail-icon.png'
 import phone_icon from '../../assets/phone-icon.png'
 import location_icon from '../../assets/location-icon.png'
+import white_arrow from '../../assets/white-arrow.png'
 
 const Contact = () => {
   return (
@@ -30,8 +31,10 @@ MA 02139, United States</li>
             <label>Phone number</label>
             <input type="tel" name="phone" placeholder="Enter your mobile" required />
             <label >Write your messages here</label>
-            
+            <textarea name="message"  rows="6" placeholder="Enter your message" required></textarea>
+            <button className="btn dark-btn">Submit now <img src={white_arrow} alt="" /></button>
         </form>
+        <span></span>
       </div>
     </div>
   );
